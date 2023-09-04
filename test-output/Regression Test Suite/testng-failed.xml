@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Test Suite]">
+  <listeners>
+    <listener class-name="com.guru99BankingDemo.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Regression Test(failed)">
+    <parameter name="headless" value="false"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.guru99BankingDemo.testCases.ManagerModuleTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="registerUsingInvalidEmail" invocation-numbers="0"/>
+          <include name="appSetUp"/>
+        </methods>
+      </class> <!-- com.guru99BankingDemo.testCases.ManagerModuleTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Regression Test Suite] -->
